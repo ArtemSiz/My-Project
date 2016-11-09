@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.content {
+    /*min-height: calc(100vh - 57px);*/
+}
+.wrapper {
+    position: relative;
+}
+header {
+    background: #edeef0;
+    height: 43px;
+}
+.container {
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.nav-tabs {
+    box-sizing: content-box;
+    text-align: center;
+    width: 79px;
+    height: 43px;
+    margin-right: 92px;
+    float: right;
+    line-height: 43px;
+    background: #e2e4e9;
+}
+.nav-tabs:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #e2e4e9;
+
+}
+.nav-link {
+    text-decoration: none;
+    margin: 0;
+    color: #30363e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0 15px;
+    text-align: center;
+}
+.nav-tabs span {
+    border: none;
+    display: inline-block;
+    background: url("images/arrow-down.svg");
+    width: 10px;
+    height: 5px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+/*Основная часть*/
+
+.content-box-row {
+    vertical-align: middle;
+    padding: 15px 10px;
+}
+.column-one {
+    margin-left: 12px;
+    padding-right: 15px;
+    padding-left: 88px;
+    width: 50%;
+    float: left;
+}
+.column-one .img-logo {
+    max-height: 65px;
+    max-width: 225px;
+    float: left;
+    margin-right: 50px;
+    display: block;
+}
+.container .column-one h2 {
+    float: left;
+    color: #30363e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 250px;
+}
+.container .column-one span {
+    color: #2f78d6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 45px;
+    margin-right: 250px;
+    line-height: 1;
+}
+.container .column-one p {
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    clear: both;
+}
+.column-two {
+    margin-left: -15px;
+    padding-top: 1px;
+    padding-right: 82px;
+    padding-left: 24px;
+    width: 50%;
+    float: right;
+}
+.column-two .under-table {
+    color: #30363e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.column-two .table {
+    padding: 30px;
+    background: #edeef0;
+}
+.column-two .table input[placeholder],
+.column-two .table textarea {
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 12px;
+}
+.column-two .table input {
+    border: 1px solid #e4e4e6;
+    line-height: 51px;
+    margin-bottom: 15px;
+}
+.column-two .table label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.column-two .table .name {
+    width: 100%;
+}
+.column-two .table .name input {
+    width: 100%;
+}
+
+.column-two .table .mail,
+.column-two .table .phone {
+    width: calc(50% - 7px);
+}
+.column-two .table .mail input,
+.column-two .table .phone input {
+    width: 100%;
+}
+.column-two .table .mail {
+    margin-right: 5px;
+}
+.column-two .table .phone {
+    margin-left: 5px;
+}
+.column-two .table textarea {
+    padding: 22px 12px;
+    width: 100%;
+    max-height: 145px;
+    border: 1px solid #e4e4e6;
+    resize: none;
+}
+.column-two .table .button {
+    display: block;
+    margin: 15px auto 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 15%;
+    background: #3078d7;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.column-two .table .button:hover {
+    transition: background .3s ease;
+    background: rgb(38, 70, 139);
+}
+.footer {
+    text-align: center;
+    max-height: 57px;
+    border-top: 5px solid #edeef0;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 57px;
+    position: relative;
+    z-index: 2;
+}
+.footer a {
+    color: #999;
+    text-decoration: underline;
+}
