@@ -4,26 +4,20 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font: 14px 'Arial', sans-serif;
     line-height: 1.42857143;
     color: #333;
 }
 .content {
-    /*min-height: calc(100vh - 57px);*/
-}
-.wrapper {
-    position: relative;
+    min-height: calc(100vh - 57px);
 }
 header {
     background: #edeef0;
     height: 43px;
 }
 .container {
-    margin-left:auto;
-    margin-right:auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding: 0 13px;
 }
 .container::after {
     content: '';
@@ -40,7 +34,7 @@ header {
     text-align: center;
     width: 79px;
     height: 43px;
-    margin-right: 92px;
+    margin-right: 93px;
     float: right;
     line-height: 43px;
     background: #e2e4e9;
@@ -54,9 +48,7 @@ header {
     text-decoration: none;
     margin: 0;
     color: #30363e;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
+    font: 400 30px 'Roboto', sans-serif;
     padding: 0 15px;
     text-align: center;
 }
@@ -92,19 +84,13 @@ header {
 .container .column-one h2 {
     float: left;
     color: #30363e;
-    font-family: 'Roboto', sans-serif;
-    font-size: 65px;
-    font-weight: 500;
+    font: 500 65px 'Roboto', sans-serif;
     line-height: 1;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 250px;
+    margin: 20px 250px 10px 0;
 }
 .container .column-one span {
     color: #2f78d6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
+    font: 700 35px 'Roboto', sans-serif;
     display: inline-block;
     margin-bottom: 45px;
     margin-right: 250px;
@@ -112,24 +98,18 @@ header {
 }
 .container .column-one p {
     color: #999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font: 400 14px/1.42857143 'Roboto', sans-serif;
     clear: both;
 }
 .column-two {
     margin-left: -15px;
-    padding-top: 1px;
-    padding-right: 82px;
-    padding-left: 24px;
+    padding: 1px 82px 0 24px;
     width: 50%;
     float: right;
 }
 .column-two .under-table {
     color: #30363e;
-    font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 300;
+    font: 300 42px/1.42857143 'Roboto', sans-serif;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -141,15 +121,11 @@ header {
 .column-two .table input[placeholder],
 .column-two .table textarea {
     color: #999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    padding-left: 12px;
-}
-.column-two .table input {
-    border: 1px solid #e4e4e6;
-    line-height: 51px;
+    font: 300 20px 'Roboto', sans-serif;
+    padding: 14px 13px;
     margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #e4e4e6;
 }
 .column-two .table label {
     display: inline-block;
@@ -160,17 +136,9 @@ header {
 .column-two .table .name {
     width: 100%;
 }
-.column-two .table .name input {
-    width: 100%;
-}
-
 .column-two .table .mail,
 .column-two .table .phone {
     width: calc(50% - 7px);
-}
-.column-two .table .mail input,
-.column-two .table .phone input {
-    width: 100%;
 }
 .column-two .table .mail {
     margin-right: 5px;
@@ -179,21 +147,19 @@ header {
     margin-left: 5px;
 }
 .column-two .table textarea {
-    padding: 22px 12px;
-    width: 100%;
+    padding-top: 22px;
+    margin-bottom: 0;
+    height: 466px;
     max-height: 145px;
-    border: 1px solid #e4e4e6;
     resize: none;
 }
 .column-two .table .button {
     display: block;
     margin: 15px auto 0;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font: 500 18px 'Roboto', sans-serif;
     text-transform: uppercase;
-    padding: 15px 15%;
+    padding: 16px 74px;
     background: #3078d7;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -209,12 +175,8 @@ header {
     max-height: 57px;
     border-top: 5px solid #edeef0;
     color: #999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
+    font: 300 18px 'Roboto', sans-serif;
     line-height: 57px;
-    position: relative;
-    z-index: 2;
 }
 .footer a {
     color: #999;
